@@ -1,0 +1,9 @@
+.colorButton{
+    transition: 0.5s;
+    background: red;
+}
+
+.colorBlue{
+    transition: 0.5s;
+    background: blue;
+}
