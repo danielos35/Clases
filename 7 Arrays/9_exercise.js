@@ -48,3 +48,7 @@ y lo anterior es igual a
 */ 
 
 
+// FUNCIÓN ENCADENADA
+const edadHumana = (arr)=>{return arr.map((arr)=>arr = arr<=2?arr*2:(16+arr)*2).filter((res)=>res>=18).reduce((res, elemento, _, arr)=>res+elemento/arr.length,0)}; 
+let edad = edadHumana(arr)
+console.log(edad);
