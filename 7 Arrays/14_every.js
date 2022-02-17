@@ -3,7 +3,7 @@
 let arr = [1, 2, 3, 4, 4, 4, 65, 7, 5, 4];
 console.log(arr.every(res=>res>0));
 console.log(arr.every(res=>res<0))
-
+console.log(typeof arr);
 
 /*ARGUMENTOS
 - Elemento. 
