@@ -84,3 +84,8 @@
         let desdeNavegador = new Intl.DateTimeFormat(idiomaDedeNavegador).format(fecha);
         console.log(desdeNavegador);
         
+
+// NOTAS................................................
+
+        // 1. Los meses se escribirán siempre en el idioma que le pasemas en la configuración del Intl.DateTimeFormat
+        // 2. Documentación de formato de intl https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl
