@@ -1,4 +1,4 @@
-const friends = ["Daniel", "Felipe", "Sandra", "Nestor"]
+    const friends = ["Daniel", "Felipe", "Sandra", "Nestor"]
 
 // Push add new item to the end
 const newLength = friends.push('Alex'); 
