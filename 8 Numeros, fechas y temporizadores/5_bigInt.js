@@ -1,4 +1,5 @@
 // ..............................CONTEXTO.............................
+// NO USAR EN BACKEND JS PARA OPERACIONES PRECISAS
     /*
     Los numeros en JavaScrip se representa con 64 bits, 
         - 53 bits de esas posiciones son para almacenar el valor del numero 
