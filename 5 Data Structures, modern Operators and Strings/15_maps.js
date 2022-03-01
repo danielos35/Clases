@@ -1,4 +1,5 @@
 // Estructura de datos que podemos usar para asignar valores a llaves
+// No es muy usado 
 
 // CREAR UN MAP
 const restaurante = new Map();
