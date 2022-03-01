@@ -1,4 +1,5 @@
 // Creacion de set // Conjuntos
+// No muy usado
 const ejemploSet = new Set([
     'Daniel', 
     'Felipe',
