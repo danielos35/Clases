@@ -1,0 +1,17 @@
+
+/* VARIABLES*/
+
+
+/* Las variables pueden ser usadas para almacenar valores*/
+:root{
+    --color-primario: #DBDB02
+}
+
+
+.estilo{
+    color: var(--color-primario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
