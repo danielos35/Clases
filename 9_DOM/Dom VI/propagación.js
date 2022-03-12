@@ -22,25 +22,29 @@
 
         //a. Contenedor
             let alto = 10;
+          
+
             document.querySelector('.contenedor').addEventListener('click', function(e){
                 this.style.backgroundColor = randomColor()
-                alto+=10
                 this.style.height = `${alto}px`
-                console.log('contenedor: '+ e.target);
+                alto++
+                console.log('Contendor: ', e.target, e.currentTarget);
             }); 
-
-
-            document.querySelector('.item').addEventListener('click'), function(e){
+            
+            document.querySelector('.item').addEventListener('click', function(e){
                 this.style.backgroundColor = randomColor()
                 this.style.height = `${alto-10}px`
-                console.log('Item: ', e.target);
-            }; 
+                console.log('Item: ', e.target, e.currentTarget);
+            }); 
             
             
-            document.querySelector('.link').addEventListener('click'), function(e){
+            // La propagación se puede detener con stoPropagation, pero evitarlo lo mas posible
+            document.querySelector('.link').addEventListener('click', function(e){
                 this.style.color = randomColor()
                 this.style.width = '30px'
-                this.style.height = '30px'
-                console.log('link: ', e.target);
+                this.style.height = `${alto-5}px`
+                console.log('link: ', e.target, e.currentTarget);
+                console.log(e.currentTarget === this);
+                e.stopPropagation()
 
-            }; 
+            }); 
