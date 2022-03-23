@@ -37,7 +37,7 @@ console.log(25*10/100);
 
 let numbers = [1,2,3,4,5,2,31,2];
 let arr = numbers.reduce((acc,elemento,index)=>{
-    return acc+=elemento;
+    return acc    +=elemento;
 })
 
 console.log(arr);
