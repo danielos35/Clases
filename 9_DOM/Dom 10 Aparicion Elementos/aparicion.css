@@ -25,10 +25,12 @@
     height: 30vh;
 
     background: green;
+
+    transition: 1.5s;
 }
 
 
 .itemDesplazamiento{
+    opacity: 0;
     transform: translateY(8rem);
-    transition: 1s;
 }

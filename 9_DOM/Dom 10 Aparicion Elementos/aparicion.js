@@ -1,5 +1,5 @@
 // Section que va ser desplazada
-const pages = document.querySelectorAll('.page'); 
+
 const items = document.querySelectorAll('.item')
 
 
@@ -15,21 +15,32 @@ items.forEach(function(item){
 
         const revealSection = function(entries, observer){
             const [entry] = entries;
-            console.log(entry      );
+            console.log('entry:',entry);
 
+
+            // Solo cuando se esté intersectando;
+            if(!entry.isIntersecting)return
+            entry.target.classList.remove('itemDesplazamiento');
+
+
+            // Dejar de observar
+            observer.unobserve(entry.target)
         }
 
         const sectionObserver = new IntersectionObserver(
             revealSection,{
                 root:null,
-                threshold:0.15
+                threshold:1
             }   
         ) 
 
 
+        
+
+
     // Recorremos todas las secciones 
 
-        pages.forEach(function(section){
+        items.forEach(function(section){
             sectionObserver.observe(section)
         })
 
