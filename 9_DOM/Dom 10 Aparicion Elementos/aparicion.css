@@ -1,0 +1,34 @@
+
+
+*{
+    margin: 0;
+}
+
+.page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 5px;
+
+    background-color: blue;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80%;
+    height: 30vh;
+
+    background: green;
+}
+
+
+.itemDesplazamiento{
+    transform: translateY(8rem);
+    transition: 1s;
+}
