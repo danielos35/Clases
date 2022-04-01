@@ -53,5 +53,10 @@
             //e Ver si un un objeto es protipo de una clase 
                 console.log(PersonaDos.prototype.isPrototypeOf(daniel));
 
-            // El Persona.prototype, es el prototype del objeto, mas no de la clase
+            //f El Persona.prototype, es el prototype del objeto, mas no de la clase
                 console.log(PersonaDos.prototype.isPrototypeOf(PersonaDos));
+
+
+            //g Cadena de prototipos, es la cadena que se da etre el objeto y el prototipo del objeto
+
+            // h El prototipo de un objeto también es un objeto, por tal también debe de tener un prototipo, y el prototipo del prototipo del objeto siempre es Object.prototype y el prototipo de este es null, y esta es la función que se llama cada vez que creamos un literal
