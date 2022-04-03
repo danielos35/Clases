@@ -27,3 +27,31 @@ carroDos.acelerar();
 carroDos.frenar();
 
 
+class CarroDos {
+    constructor(marca, ano){
+        this.marca = marca; 
+        this.ano = ano; 
+    }
+
+    get getMarca(){
+        return this.marca
+    }
+
+    set setMarca(marca){
+        if(marca !== 'Ford')console.log('Debe ser una marca americana');
+        else this.marca = marca;
+
+    }
+}
+
+
+const carroNestor = new CarroDos('Audi', 2008)
+console.log(carroNestor);
+
+
+// Modificar marca
+carroNestor.setMarca = 'Ford'; 
+
+// Ver marca
+console.log(carroNestor.getMarca);
+
