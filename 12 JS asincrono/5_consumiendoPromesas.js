@@ -1,6 +1,7 @@
 // CONSUMIR PROMESAS
 
-    // 1. Consumir promesa
+
+        // 1. Consumir promesa
 
     let getCoutry = function(country){
 
@@ -16,10 +17,26 @@
 
                 return res.json()
 
+            // El metodo then siempre devuelve una promesa, sin importar si se expecifica o No
             }).then(
 
-                datos=>{console.log(datos);}
-            )
+                datos=>{
+                    
+                    // Encadenar Promesas dependiendo de otras
+                    let nuevoPais = datos[0].borders[0]; 
+                    if(!nuevoPais)return;
+
+                    // No anidar la función,
+                        // return fetch(`https://restcountries.com/v2/alpha/${nuevoPais}`).then(.....);
+
+
+                    // Siempre retornarla
+                    return fetch(`https://restcountries.com/v2/alpha/${nuevoPais}`);
+                }
+            ).then(
+                res=>res.json()
+            ).then(res=>{
+                console.log(res);})
 
 
         // c. la respuesta retornara datos obre la consulta en objeto con información importante sobre la consulta
@@ -35,7 +52,9 @@
 
         let peticionFecth = fetch(`https://restcountries.com/v2/name/${country}`);
         peticionFecth.then(res=> res.json()).then(
-            datos=>{console.log(datos);}
+            datos=>{console.log(datos)}
         )        
     }
 
+// NOTAS then siempre devuelve una promesa, el argumento del callback de then es el argumento cumplido de la promesa
+    fetch(`https://restcountries.com/v2/name/${country}`).then(res=>12).then(res=>console.log(res))
