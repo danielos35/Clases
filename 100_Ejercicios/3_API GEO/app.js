@@ -32,13 +32,52 @@ let verLugar = function(){
             return res.json()})
     }
 
+
+let getCountry = function(url,country){
+    let consulta =`${url}/${country}`;
+    return  fetch(consulta).
+            then(res=>{
+
+            // Debe ser usado para que la promesa no se cumpla
+            if(!res.ok) throw Error('Pais no encontrado');
+            return res.json()
+    })    
+}
+
 consultarCorrdenada.addEventListener('click',function(){
+
     verLugar().then(res=>{
         console.log(res);
-        console.log(`estas en ${res.standard.city}, ${res.standard.countryname}`,)
-        let html = `
-        <h1>${res.standard.city}</h1>
-        <h1>${res.standard.countryname}</h1>`;
+        if(!!res.standard){
+            return res.standard.countryname.toLowerCase();
+        }else{
+            return res.country.toLowerCase().replace(' ','');
+        }
+    }).then(res=>{
+
+        return getCountry('https://restcountries.com/v2/name',res)
+        
+
+    }).then(res=>{
+        let [dataPais] = res;
+        if(!dataPais) throw new Error('segundo Pais no encontrado')
+        let html = `<h1>${dataPais.name}</h1>
+                    <img src="${dataPais.flags.png}"></img>`;
+                    
         info.insertAdjacentHTML("afterbegin",html)
-    }).catch(res=>console.log(res))
+    }).
+
+    catch(res=>console.log(res)).
+    finally(res=>console.log('Tarea Cumplida'));
+
+
+   
+
+
+
+
+    
+
+
+
 })
