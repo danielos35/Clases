@@ -1,0 +1,29 @@
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    height: 100vh;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 90%;
+    height: 20%;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 90%;
+    height: 70%;
+
+    background: blue;
+}
