@@ -10,4 +10,22 @@ console.log(y,x);
 const [m,,n] = arreglo; 
 console.log(m,n);
 
- 
+
+// Intercambiar valores de variables
+let valorPrincipal:number = 12; 
+let valorSecundario:number = 10; 
+console.log(valorPrincipal,valorSecundario);
+
+[valorPrincipal,valorSecundario] = [valorSecundario,valorPrincipal]; 
+console.log(valorPrincipal,valorSecundario);
+
+// Desestructurar arrays anidados 
+const arrayAnidado:Array<any> = [1,2,3,[3,4,5]]; 
+const [valueA,,valueC,[valueD,valueE]] = arrayAnidado; 
+console.log(valueA, valueC, valueD, valueE);
+
+
+// Valores por defecto 
+
+let [porDefectoA = 12, porDefectoB = 5 ] = [3]
+console.log(porDefectoA,porDefectoB);
