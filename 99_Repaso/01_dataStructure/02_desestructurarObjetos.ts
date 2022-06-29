@@ -55,4 +55,17 @@ console.log(a,b);
 ({a,b} = obj ); 
 console.log(a,b);
 
+let desesTructurarArgumentos = ({name = "por Defecto", lastName = "por Defecto"})=>{
+    console.log(name,lastName);
+}
+
+let objetoTest:any = {
+    name:'Daniel', 
+    lastName:'Marquez A',
+    tel:123
+}
+
+desesTructurarArgumentos(objetoTest)
+desesTructurarArgumentos({})
+
 export {}
