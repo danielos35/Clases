@@ -29,3 +29,4 @@ console.log(valueA, valueC, valueD, valueE);
 
 let [porDefectoA = 12, porDefectoB = 5 ] = [3]
 console.log(porDefectoA,porDefectoB);
+export {}
