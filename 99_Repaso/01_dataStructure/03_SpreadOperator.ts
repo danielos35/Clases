@@ -31,6 +31,45 @@ ITERABLES
 // String
 console.log(...'holaMundo');
 
-// 
 
 
+
+// OBJETOS, puede ser utilizado para la compia de objetos 
+const empleadoUno = {
+    nombre:'Daniel',
+    tel:123
+}
+
+const empleadoDos = {...empleadoUno};
+console.log(empleadoUno);
+console.log(empleadoDos);
+
+empleadoDos.nombre = 'Pepito';
+
+console.log(empleadoUno);
+console.log(empleadoDos);
+
+
+
+
+
+
+
+
+
+
+
+// Pasar como argumentos de una función (No funciona en TS)
+
+/*
+
+let verNumeros = function(numOne:number,numTwo:number,numThree:number){
+    console.log(numOne, numTwo, numThree);   
+}
+
+const valores = [1,2,3];
+verNumeros(...valores)
+
+
+
+*/ 
