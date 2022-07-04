@@ -73,3 +73,5 @@ verNumeros(...valores)
 
 
 */ 
+
+export {}
