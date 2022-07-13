@@ -40,3 +40,12 @@ for(let item of setString){
 
 
 
+
+// Convertir en un array 
+let arreglo  =  [...setString];
+console.log(arreglo);
+
+
+
+
+
