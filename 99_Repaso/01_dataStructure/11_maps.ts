@@ -33,3 +33,35 @@ OBTENER LOS ELEMENTOS MEDIANTE GET
 console.log(
     restaurante.get(false)
 );
+
+
+
+let restaurant:Map<any,any> =  new Map();
+
+restaurant.set( true, 'Abierto'); 
+restaurant.set( false, 'Cerrado'); 
+restaurant.set( 'Open', 8) 
+restaurant.set( 'Close', 10 ); 
+restaurant.set( 2, 10 ); 
+
+let horaApertura =  8;
+
+console.log(restaurant.get(horaApertura >= restaurant.get('Open') && horaApertura <= restaurant.get('Close')));
+
+
+
+console.log(
+    restaurant.has('Open')
+);
+
+console.log(restaurant.delete(2));
+console.log(restaurant.size);
+console.log(restaurant.clear());
+console.log(restaurant.size);
+
+let arr =  [1,2,3]
+restaurant.set(arr, 'HolaMundo'); 
+
+console.log(
+    restaurant.get(arr)
+);
