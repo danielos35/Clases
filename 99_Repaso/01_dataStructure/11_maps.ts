@@ -65,3 +65,15 @@ restaurant.set(arr, 'HolaMundo');
 console.log(
     restaurant.get(arr)
 );
+
+
+// Otra manera de creart Maps
+
+const question = new Map([
+    ['question','What is the best language'],
+    ['test','What is the best language'],
+    ['testDos','What is the best language'],
+]
+)
+
+console.log(question);
