@@ -17,18 +17,5 @@ let redbull: f1Car = {
 console.log(redbull?.capacity);
 console.log(ferrari?.capacity);
 
-// Optional chaning
 
-let restaurantChaining = {
-  americanMenu: {
-    eeuu: "hamburguer",
-    mexico: "tacos",
-    colombia: {
-      menuOne: "bandeja paiza",
-      menuTwo: "sancocho",
-    },
-  },
-};
-
-console.log(restaurantChaining.americanMenu.colombia?.menuOne);
-console.log(restaurantChaining.americanMenu.china?.menuOne);
+// Uso para metodos 
