@@ -1,6 +1,6 @@
 // ..........................SOME.............................
 /*
-- A Diferencia de includes que compara directamente el valor con los que están dentro del arreglo con SOME podemos evaluar una condición, por tanto hacepta una callback
+- A Diferencia de includes que compara directamente el valor con los que están dentro del arreglo con SOME podemos evaluar una condición, por tanto acepta una callback
 -  El metodo some devueve un valor booleano  
 
 
