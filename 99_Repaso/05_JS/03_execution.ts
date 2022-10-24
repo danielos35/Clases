@@ -21,10 +21,6 @@ CONTEXTO DE EJECUCIÓN
 - Contexto de ejecución objeto: un objeto crea su propio contexto de ejecución
 - this: hacer referencia al contexto de ejecución  
 
-CALL STACK 
-
-- 
-
 NOTAS
 
 -
