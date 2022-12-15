@@ -18,4 +18,5 @@ console.log(12 && 'HolaMundo' && null);
 let esFalso = true && 'HolaMundo'; 
 console.log(esFalso);
 
+let data; 
 
